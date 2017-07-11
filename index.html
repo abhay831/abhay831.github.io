@@ -349,9 +349,9 @@ This is my fourth block
 	</div>
 </footer>
 <script>
-	$(window).load(function(){
+	function loader(){
      		$('.loader').fadeOut();
-	});
+	};
   var col1=document.getElementById("box1");	
   var col2=document.getElementById("box2");
   var col3=document.getElementById("box3");
@@ -388,7 +388,7 @@ This is my fourth block
   }
  setTimeout(colo,5000);
 }
-  window.onload=colo;
+  window.onload=colo,loader;
   var timeoutId;
   var startTime;
   var endTime;
