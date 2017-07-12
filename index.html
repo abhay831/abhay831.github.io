@@ -166,6 +166,7 @@ input[type="text"]:focus body{
   </svg>
 </div>
  </div>
+<div id ="page" class="hidden">
 <div class="col-lg-12 col-md-12 col-ls-12 col-xs-12 bg">
 
   <div class="mdl w3-display-topmiddle">
@@ -398,9 +399,11 @@ This is my fourth block
 	</div>
 	</div>
 </footer>
+</div>
 <script>
 	function loader(){
-     		$('.loader').delay(6000).fadeOut('slow');
+     		$('.loader').fadeOut();
+		$('#page').removeclass('hidden');
 	};
   var col1=document.getElementById("box1");	
   var col2=document.getElementById("box2");
